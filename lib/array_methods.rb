@@ -4,12 +4,12 @@ end
 
 def find_max_value(array)
   max = 0 #assuming values are integers
-  array.each { |e|
-    max = e if e >= max
-  }
+  array.each { |e|  max = e if e >= max}
   max
 end
 
 def find_min_value(array)
-  
+  min = array[-1]
+  array.each {|e| min = e if e <= min }
+  min
 end
